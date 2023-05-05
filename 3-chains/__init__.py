@@ -12,3 +12,7 @@ prompt = PromptTemplate(input_variables=["organism"], template="What is a good p
 formatted_prompt = prompt.format(organism='polar bear')
 
 print(formatted_prompt)
+
+output = llm(formatted_prompt)
+
+print(output)
